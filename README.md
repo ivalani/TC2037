@@ -1,2 +1,2 @@
 # TC2037
-- Implementacion de metodos computacionales:
+- Implementacion de metodos computacionales
