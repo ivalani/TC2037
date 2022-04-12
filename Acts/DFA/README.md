@@ -6,49 +6,57 @@ DFA (deterministic finite automata) It is a way of representing a state machine,
 
 1. [Index](#index) 
 2. [Activity descrption](#Activity_Description)
-3. [Requerimientos del programa](#Requerimientos)
-4. [Como ejecutar el programa](#ejecucion)
-4. [Diagrama del diseño automata](#diagrama)
+3. [Program Requirements](#Requerimientos)
+4. [How to run the program](#ejecucion)
+4. [Automata layout diagram](#diagrama)
 
 ## _Activity_Description_ 
 
-Hacer una función que reciba como argumento un string que contenga expresiones aritmeticas y comentarios, con su lista de tokens. 
+Make a function that receives as an argument a string containing arithmetic expressions and comments, with its list of tokens.
 
 ### Tokens: 
-- Enteros
-- Flotantes 
-- Operadores  
-- Identificadores
-- Simbolos especiales: ( )
-- Comentarios // (con caracteres)
+- Integers
+- Floating
+- Operators
+- Identifiers
+- Special symbols: ( )
+- Comments // (with characters)
 
-### Algoritmo: 
-- El **reconocimiento** de tokens se debe hacer por medio de la transición de un Autómata Finito Determinístico.
-- El diseño del autómata debe ser parte fundamental de la documentación.
+### Algorithm: 
+- The **recognition** of tokens must be done through the transition of a Deterministic Finite Automaton.
+- The design of the automaton must be a fundamental part of the documentation.
 
 ## _Requerimientos_
 
-El programa esta diseñado con el lenguaje de Racket siguiendo las indicaciones de la actividad descrita anteriormente 
+The program is designed with the language of Racket following the indications of the activity described above.
 
-Es necesario instalar la version de racket 8.4 (o similar), para ello puedes seguir la siguiente liga de instalacion. 
-- Windows: 
-- Mac: 
+It is necessary to install racket version 8.4 (or similar), for this you can follow the following installation link:
+https://racket-lang.org/download/ 
 
 ### Requerimientos necesarios para las computadoras
-(agregar los requisitos basicos para racket de computadora)
+
+Pollen will run on Mac OS, Linux, or Windows.
+
+Pollen is not a self-contained GUI program like Adobe InDesign. It’s a software package that runs atop the Racket language environment (also a free download).
+
+Your three main tools in Pollen will be a text editor (for those starting out, I recommend DrRacket: The Racket Programming Environment), a terminal window, and a web browser. The terminal commands you’ll be using are simple, but if you haven’t used your terminal window before, this is the moment to learn where it is. (On Mac OS, your terminal window is called Terminal; on Windows it’s called the Windows Command Processor.)
+
+After the initial download, Pollen does not require a network connection. (text extracted from https://docs.racket-lang.org/pollen/Installation.html#%28part._.Prerequisites%29)
 
 ## _Ejecucion_
 
-Una ves teniendo instalado Racket y haber bajado los archivos correspndientes dentro del respositorio (dfa2.rkt): 
+Once you have Racket installed and have downloaded the corresponding files into the repository (dfa2.rkt):
 
-1. Ejecutar el programa de Racket
-2. Abrir dentro del programa el archivo descargado 
-3. Correr el archivo. 
+1. Run the racket program (recommend DrRacket or visual studio)
+2. Open the downloaded file within the program
+3. Run the file.
 
-Notas: 
-* Dentro del programa se encuentran casos de prueba que tomados de los archivos "arithmetic test" 
-* El programa devolvera como salida 
+Notes:
+* Within the program there are test cases that are taken from the "arithmetic test" files
+* To do a new test, add in the funtion "(define test-arithmetic-lexer
+    (test-suite)) -- > (Ex: (check-equal? (arithmetic-lexer "2") '(("2" int)) "Single digit"))
+* The program will return as output if the operation has finished successfully, otherwise it will indicate the error.
 
 
 ### _diagrama_
-<!-- ![](Automata.jpeg)  to add image  -->
+![](Automata_diagram.png)  to add image
