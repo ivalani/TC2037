@@ -58,5 +58,5 @@ Notes:
 * The program will return as output if the operation has finished successfully, otherwise it will indicate the error.
 
 
-### _diagrama_
+### _Automata layout diagram_
 ![](Automata_diagram.png)  to add image
