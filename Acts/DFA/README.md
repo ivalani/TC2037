@@ -5,9 +5,9 @@ DFA (deterministic finite automata) It is a way of representing a state machine,
 ## _Index_
 
 1. [Index](#index) 
-2. [Activity](#Activity)
+2. [Activity descrption](#Activity_Description)
 
-## _Activity Description_ 
+## _Activity_Description_ 
 
 
 El **reconocimiento** de tokens se debe hacer por medio de la tabla de transición de un Autómata Finito Determinístico.
