@@ -5,13 +5,13 @@ DFA (deterministic finite automata) It is a way of representing a state machine,
 ## _Index_
 
 1. [Index](#index) 
-2. [Activity descrption](#Activity_Description)
-3. [Program Requirements](#Requerimientos)
-4. [How to run the program](#ejecucion)
-4. [Automata layout diagram](#diagrama)
+2. [Activity descrption](#description)
+3. [Program Requirements](#requirements)
+4. [How to run the program](#ejecution)
+5. [Automata layout diagram](#diagram)
 
-## _Activity_Description_ 
-
+## _description_ 
+_
 Make a function that receives as an argument a string containing arithmetic expressions and comments, with its list of tokens.
 
 ### Tokens: 
@@ -26,14 +26,14 @@ Make a function that receives as an argument a string containing arithmetic expr
 - The **recognition** of tokens must be done through the transition of a Deterministic Finite Automaton.
 - The design of the automaton must be a fundamental part of the documentation.
 
-## _Requerimientos_
+## _requirements_
 
 The program is designed with the language of Racket following the indications of the activity described above.
 
 It is necessary to install racket version 8.4 (or similar), for this you can follow the following installation link:
 https://racket-lang.org/download/ 
 
-### Requerimientos necesarios para las computadoras
+### Pre-Requirements
 
 Pollen will run on Mac OS, Linux, or Windows.
 
@@ -43,7 +43,7 @@ Your three main tools in Pollen will be a text editor (for those starting out, I
 
 After the initial download, Pollen does not require a network connection. (text extracted from https://docs.racket-lang.org/pollen/Installation.html#%28part._.Prerequisites%29)
 
-## _Ejecucion_
+## _Ejecution_
 
 Once you have Racket installed and have downloaded the corresponding files into the repository (dfa2.rkt):
 
@@ -58,5 +58,5 @@ Notes:
 * The program will return as output if the operation has finished successfully, otherwise it will indicate the error.
 
 
-### _diagrama_
+### _diagram_
 ![](Automata_diagram.png)  to add image
